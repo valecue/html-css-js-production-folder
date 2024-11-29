@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.caja-divisora {
+    display: flex;
+}
+
+.datos-libro-izquierda {
+    width: 260px;
+    padding: 20px;
+    
+}
+
+.principal700 {
+    width: 700px; /* Resta el ancho de la columna izquierda y el margen */
+    padding: 20px;
+    
+}
+
+.border-personajes {
+    border: 2px solid black;
+    padding: 30px;
+    margin-top: 20px;
+    width: 700px;
+}
+
+.caja-personajes {
+    display: flex;
+}
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Floating-WhatsApp-Message-Button-jQuery/floating-wpp.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Uso de carrusell slider-->
+    <section class="useSliderPlugin">
+        <!-- Uso de ligth BOX-->
+        <a class="demo" href="fondo-1.jpg" data-lightbox="example-1" data-title="Caption">
+            <img class="example-image" src="fondo-1.jpg" alt="image-1">
+        </a>
+          
+        <a class="demo" href="fondo-2.jpg" data-lightbox="example-2" data-title="Caption">
+            <img class="example-image" src="fondo-2.jpg" alt="image-2">
+        </a>
+    
+        <a class="demo" href="fondo-3.jpg" data-lightbox="example-2" data-title="Caption">
+            <img class="example-image" src="fondo-3.jpg" alt="image-2">
+        </a>
+    </section>
+
+    <!--Uso de parallax -->
+    <section class="parallax-bg" data-parallax-image="parallax1.jpg">
+        <h2>PUNTA CANA</h2>
+    </section>
+      
+    <section class="parallax-bg" data-parallax-image="parallax2.jpg">
+        <h2>NEW YORK</h2>
+    </section>
+      
+    <section class="parallax-bg" data-parallax-image="parallax3.jpeg">
+        <h2>ALPES SUIZOS</h2>
+    </section>
+
+    <!--Uso whatsapp-->
+    <div class="floating-wpp"></div>
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Plugin https://www.jqueryscript.net/slider/responsive-lightbox-slider-web.html-->
+    <script src="/js/imagesSlider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+    </script>
+
+    <!--Plugin https://www.jqueryscript.net/social-media/Floating-WhatsApp-Message-Button-jQuery.html-->
+    <script src="Floating-WhatsApp-Message-Button-jQuery/floating-wpp.min.js"></script>
+
+    <!--Plugin https://www.jqueryscript.net/animation/background-parallax-diurnal.html-->
+    <script src="js/jquery.diurnal.min.js"></script>
+
+    <!--Plugin https://www.jqueryscript.net/plus/search.php?kwtype=0&keyword=jquery+light+box-->
+    <script src="js/lightbox.js"></script>
+
+
+    <!--Funciones -->
+    <script>
+
+        $(function () {
+            $('.floating-wpp').floatingWhatsApp({
+                phone: '112345678',
+                popupMessage: 'Consultas',
+                showPopup: true,
+                message: 'Escriba su consulta',
+                headerTitle: 'Consultas'
+            });
+        });
+
+        $(function(){
+            $('.parallax-bg').dParallax();
+        });
+
+        $(function(){
+            $('.kslider').kslider({});
+        });
+
+        $(document).ready(function(){
+        $('.your-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+    });
+
+    </script>
+</body>
+</html>

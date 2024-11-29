@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f4f8; 
+    color: #333; 
+  }
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+  }
+  .card-title {
+    color: #212529;
+  }
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 10px 0;
+  }

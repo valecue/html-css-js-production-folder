@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 08 - Introducción a Javascript</title>
+    <script>
+        // Declarar variables con nombre y apellido
+        let primerNombre = "Valentina";
+        let apellido = "Cuello";
+    </script>
+</head>
+<body>
+    <script>
+        // Mostrar saludo con el nombre y apellido concatenados
+        alert("Hola, " + primerNombre + " " + apellido);
+    </script>
+
+    <h2>Rectángulo</h2>
+    <script>
+        // Solicitar los lados del rectángulo
+        let lado1 = parseFloat(prompt("Ingresa el primer lado del rectángulo:"));
+        let lado2 = parseFloat(prompt("Ingresa el segundo lado del rectángulo:"));
+        
+        // Calcular perímetro y área
+        let perimetro = 2 * (lado1 + lado2);
+        let area = lado1 * lado2;
+
+        // Mostrar los resultados en el documento
+        document.write("<p>El perímetro del rectángulo es " + perimetro + "</p>");
+        document.write("<p>El área del rectángulo es " + area + "</p>");
+    </script>
+
+    <h2>Triángulo</h2>
+    <script>
+        // Solicitar los tres lados del triángulo
+        let ladoA = parseFloat(prompt("Ingresa el primer lado del triángulo:"));
+        let ladoB = parseFloat(prompt("Ingresa el segundo lado del triángulo:"));
+        let ladoC = parseFloat(prompt("Ingresa el tercer lado del triángulo:"));
+
+        // Determinar el tipo de triángulo
+        let tipoTriangulo;
+        if (ladoA === ladoB && ladoB === ladoC) {
+            tipoTriangulo = "Equilátero";
+        } else if (ladoA === ladoB || ladoB === ladoC || ladoA === ladoC) {
+            tipoTriangulo = "Isósceles";
+        } else {
+            tipoTriangulo = "Escaleno";
+        }
+
+        // Mostrar el resultado
+        document.write("<p>El triángulo es " + tipoTriangulo + "</p>");
+    </script>
+
+    <h2>Números</h2>
+    <script>
+        // Solicitar 5 números y encontrar el mayor y el menor
+        let numeros = [];
+        for (let i = 1; i <= 5; i++) {
+            numeros.push(parseFloat(prompt("Ingresa el número " + i + ":")));
+        }
+
+        // Calcular el mayor y el menor
+        let mayor = Math.max(...numeros);
+        let menor = Math.min(...numeros);
+
+        // Mostrar resultados en una lista desordenada
+        document.write("<ul>");
+        document.write("<li>El número mayor ingresado es " + mayor + "</li>");
+        document.write("<li>El número menor ingresado es " + menor + "</li>");
+        document.write("</ul>");
+    </script>
+
+    <h2>Adivina el Número</h2>
+    <script>
+        // Generar un número aleatorio entre 0 y 10
+        let numeroAleatorio = Math.floor(Math.random() * 11);
+        let adivinado = false;
+
+        // Solicitar adivinanza hasta que el usuario acierte
+        while (!adivinado) {
+            let intento = parseInt(prompt("Adivina el número entre 0 y 10:"));
+            if (intento === numeroAleatorio) {
+                alert("¡Correcto! Adivinaste el número.");
+                adivinado = true;
+            } else if (intento < numeroAleatorio) {
+                alert("Tu número ingresado es menor que el número a adivinar.");
+            } else {
+                alert("Tu número ingresado es mayor que el número a adivinar.");
+            }
+        }
+    </script>
+
+    <h2>Saludo</h2>
+    <button onclick="saludar()">Saludar</button>
+    <script>
+        // Función para saludar al usuario
+        function saludar() {
+            let nombre = prompt("Ingresa tu nombre:");
+            alert("Hola, " + nombre + "!");
+        }
+    </script>
+</body>
+</html>

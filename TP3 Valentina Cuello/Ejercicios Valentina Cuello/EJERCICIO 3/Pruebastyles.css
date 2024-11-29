@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Color de fondo general */
+    color: #333; /* Color del texto */
+}
+
+
+header {
+    background-color: #0044cc; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 1rem;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff; /* Fondo blanco para secciones */
+    border: 2px solid #ccc; /* Borde gris claro para secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0044cc; /* Línea azul debajo del título */
+    padding-bottom: 0.5rem;
+    color: #0044cc; /* Color del título */
+}
+
+
+article {
+    margin-bottom: 1.5rem;
+    background-color: #e8f4f8; /* Fondo azul claro para artículos */
+    border: 1px solid #0044cc; /* Borde azul para artículos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem;
+}
+
+
+h3 {
+    font-size: 1.25rem;
+    color: #0044cc; /* Color del título dentro del artículo */
+}
+
+
+p {
+    margin-bottom: 1rem;
+    color: #555; /* Color del texto de los párrafos */
+}
+
+
+footer {
+    background-color: #0044cc; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

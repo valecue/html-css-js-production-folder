@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            .caja1 {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }
+            .caja2 {
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+            }
+            .caja3 {
+                width: 50px;
+                height: 50px;
+                background-color: green;
+            }
+
+        @media (min-width: 1200px) {
+            body {
+                margin: 100px;
+            }
+        }
+
+        @media (min-width: 960px) {
+            body {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        
+
+        
+
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width:600px){
+            body { font-size: 100px; 
+            } 
+        }
+
+        @media (max-width: 576px) {
+            h3 {
+                font-family: 'Franklin Gothic Medium';
+                font-size: 70px;
+                font-style: italic;
+                color: red;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section img {
+                width: 30%;
+                height: 30%;
+            }
+        }
+
+        @media (orientation: portrait) {
+    
+            section div {
+                display: none;
+            }
+        }
+
+        @media (orientation: landscape) {
+            nav {
+                display: block;
+            }
+
+        }
+
+
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="">Manzanas</a></li>
+            <li><a href="">Mandarinas</a></li>
+            <li><a href="">Banana</a></li>
+            <li><a href="">Kiwis</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <h1>Hola mundo! :D</h1>
+
+        <h3>Titulo1</h3>
+        <h3>Titulo2</h3>
+        <h3>Titulo3</h3>
+
+        <section class="cajas"> 
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+        <div class="caja3"></div>
+
+        </section>
+
+
+        <section>
+            <img src="/img/img_0003s_0000_marvel-1.jpg" alt="">
+
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

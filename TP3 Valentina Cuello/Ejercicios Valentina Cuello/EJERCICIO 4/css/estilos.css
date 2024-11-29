@@ -1,0 +1,85 @@
+.section1 {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+.section2 {
+    background-image: url('../img/NoxusCrest.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.section3 {
+    border-radius: 2px;
+    border-color: red;
+    border-radius: 10px;
+}
+
+.section4 {
+    padding: 10px;
+}
+
+.section4 p {
+    font-weight: 700;
+    border-radius: 2px;
+    border: solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.section5 div {
+    background-color: yellow;
+    text-align: center;
+
+}
+
+
+
+.section6 {
+    
+    border: 10px double purple;
+    background-color: gold;
+    padding: 10px;
+}
+
+.section7 {
+    background-image: url('/img/images.jpeg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+}
+
+.section8 {
+    background-image: url('/img/Charmander-265x300.webp');
+    background-size: 10%;
+    background-repeat: repeat-y;
+    
+}
+
+.section9 {
+    background-color: rgba(89, 250, 129, 0.64);
+    background-image: url('/img/001.png');
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+
+}
+
+.section9 a {
+    background-color: rgb(2, 250, 31);
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section10 {
+    width: 50%;
+    
+    border: 3px dotted green;
+    padding: 25px;
+}
+
